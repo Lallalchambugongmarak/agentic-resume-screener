@@ -54,7 +54,7 @@ class ParserAgent:
         skills = list(set(re.findall(r"Python|FastAPI|Gemini|GenAI|LLM|Qdrant|Docker|SQL|React|AWS|LangChain|RAG|Prompt|Agentic|Kubernetes", text, re.I)))
         return {
             "name": "Lallal Marak",
-            "email": re.search(r"[\w.-]+@[\w.-]+", text).group(0) if re.search(r"[\w.-]+@[\w.-]+", text) else "lala@example.com",
+            "email": re.search(r"[\w.-]+@[\w.-]+", text).group(0) if re.search(r"[\w.-]+@[\w.-]+", text) else "lalla80195@gmail.com",
             "skills": [s.title() for s in skills] or ["Python","FastAPI","GenAI","Gemini","Qdrant"],
             "experience_years": 1.0,
             "education": "MCA-CSIT",
@@ -120,7 +120,7 @@ async def screen(resume: UploadFile = File(...), jd: str = Form(...)):
     except Exception as e:
         traceback.print_exc()
         return ScreenResponse(
-            parsed=ParsedResume(name="Lallal Marak", email="lallal80195@gmail.com", skills=["Python","FastAPI","GenAI"], experience_years=1, education="B.Tech", projects=["Agentic Screener"]),
+            parsed=ParsedResume(name="Lallal Marak", email="lallal80195@gmail.com", skills=["Python","FastAPI","GenAI"], experience_years=1, education="MCA-CSIT", projects=["Agentic Screener"]),
             match=MatchResult(match_score=82, matched_skills=["Python"], missing_skills=["Qdrant"], summary="Fallback - valid response"),
             questions=["What is Agentic AI?"], feedback=f"Fallback due to {str(e)[:80]}"
         )
