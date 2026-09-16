@@ -1,4 +1,4 @@
-# agentic-resume-screener
+# Agentic-resume-screener
 Agentic AI Resume Screener - 4-Agent RAG system that cuts hiring time by 70%. FastAPI + Qdrant + Gemini + LangGraph
 # Agentic AI Resume Screener & Career Coach
 Built for Hiring Team - 4 Agent System
